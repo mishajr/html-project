@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fdbfba;
+    text-shadow: 0px 0px 10px rgba(253,191,186,1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+body{
+
+    background: radial-gradient(#9e6c99, #242323);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+.Logo-name{
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+    
+
+}
+.Logo-name h1{
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding:100px 60px 50px 60px;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.main{
+
+    width: 60%;
+    height: 100%;
+    background-color: #433344;
+    box-shadow: 0px 0px 40px #242323;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.main::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+
+.main h1{
+    font-size: 2rem;
+    text-align: center;
+    
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   
+}
+
+.films{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+
+}
+.film{
+
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #433344;
+    width: 30%;
+   
+    box-shadow: 0px 0px 40px #242323;
+    cursor: pointer;
+}
+.film:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 40px #7e4b53;
+    border: 2px solid #7e4b53;
+}
+.film img{
+    width: 100%;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px #242323;
+}
+
+
+.right-img img{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+
+
+
+.left img{
+    width: 100%;
+    height: 100%;
+   
+   
+
+}
+.description-items{
+    position: absolute;
+}
+.name-film{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    font-size: 17px;
+
+    z-index: 1;
+    box-shadow: 4px 4px 30px #433344;
+}
+
+
+.left{
+    padding: 20px;
+    background-color: #433344;
+    width: 20%;
+    margin:0px 60px;
+    transform-origin: right;
+    transform: skewY(5deg);
+    box-shadow: 0px 0px 40px #242323;
+}
+
+.right{
+    width: 20%;
+    margin:0px 60px;
+    transform-origin: left;
+    transform: skewY(-5deg);
+    background-color: #433344;
+    box-shadow: 0px 0px 40px #242323;
+}
+
+
