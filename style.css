@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -7,9 +7,7 @@
     padding: 0;
     color: #fdbfba;
     text-shadow: 0px 0px 10px rgba(253,191,186,1);
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+   
     
 }
 
@@ -19,6 +17,9 @@ body{
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     
 
 }
@@ -72,26 +73,20 @@ body{
 
 .films{
     
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
     justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 20px 0px;
-    flex-wrap: wrap;
+    gap: 20px;
+  
 
 }
 .film{
-
     padding: 10px;
-    margin-bottom: 30px;
     border: 2px solid #433344;
-    width: 30%;
-   
     box-shadow: 0px 0px 40px #242323;
     cursor: pointer;
 }
+
 .film:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -105,11 +100,15 @@ body{
     box-shadow: 0px 0px 40px #242323;
 }
 
+.right-img{
+    box-shadow: inset 0px -30px 20px #433344;
+}
 
 .right-img img{
     position: relative;
     width: 100%;
-    z-index: 0;
+    z-index: -2;
+   
 }
 
 
@@ -123,20 +122,49 @@ body{
 
 }
 .description-items{
-    position: absolute;
+    line-height: 20px;
+    height: 420px;
+    color: rgba(220, 220, 220, 0.493);
+    text-shadow: none;
+    font-family: "Playfair Display", serif;
 }
 .name-film{
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
     font-size: 17px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
 
-    z-index: 1;
-    box-shadow: 4px 4px 30px #433344;
 }
 
+.released-budget{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    
+}
+
+.released-budget span{
+    text-shadow: none;
+    font-size: 12px;
+}
+
+.movie-description{
+    margin-top: 20px;
+    padding: 0px 20px;
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    color: rgba(220, 220, 220, 0.493);
+    line-height: 20px;
+    text-shadow: none;
+
+}
 
 .left{
     padding: 20px;
@@ -146,6 +174,7 @@ body{
     transform-origin: right;
     transform: skewY(5deg);
     box-shadow: 0px 0px 40px #242323;
+  
 }
 
 .right{
@@ -157,4 +186,25 @@ body{
     box-shadow: 0px 0px 40px #242323;
 }
 
+/* HOVER */
 
+
+.hover-film1{
+    position: absolute  ;
+    opacity: 0;
+}
+
+
+.film1:hover .hover-film1{
+    opacity: 1;
+    
+}
+
+.hover-film2{
+    position: absolute;
+    opacity: 0;
+}
+
+.film2:hover .right .hover-film2{
+    opacity: 1;
+}
