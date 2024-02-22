@@ -189,22 +189,12 @@ body{
 /* HOVER */
 
 
-.hover-film1{
+.hover-film{
     position: absolute  ;
     opacity: 0;
 }
 
-
-.film1:hover .hover-film1{
+.active{
     opacity: 1;
-    
-}
-
-.hover-film2{
-    position: absolute;
-    opacity: 0;
-}
-
-.film2:hover .right .hover-film2{
-    opacity: 1;
+   
 }
